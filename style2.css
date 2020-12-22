@@ -1,0 +1,159 @@
+@font-face
+{
+    font-family: Shrikhand;
+    src: url('police/Shrikhand-Regular.ttf');
+    font-family: roboto;
+    src: url('police/Roboto-Regular.ttf');
+
+}
+*
+{
+	padding : 0;
+    margin : 0;
+    font-family: roboto;
+}
+
+a:link
+{ 
+    text-decoration:none; 
+    color: white;
+} 
+
+.logo_accueil
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    margin-bottom: 2px;
+    box-shadow: 0px -10px 25px black;
+}
+
+.logo_accueil p 
+{
+    font-family: shrikhand;
+    font-size: 2em;
+}
+
+.img_menu1
+{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.conteneur_menu
+{
+    background-color: #F2F3F4;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.titre_menu
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.titre_menu p
+{
+    font-family: shrikhand;
+    font-size: 2em;
+}
+
+.fa-heart
+{
+    font-size: 25px;
+}
+
+.liste_menu
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+.choix_entree 
+{
+    border-bottom: 3px solid #99E2D0;
+    width: 11%;
+}
+
+.conteneur_description_prix
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteneur_description_prix p 
+{
+    font-size: 13px;
+}
+
+.choix
+{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.commander_menu
+{
+    background-color: #F2F3F4;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.commander_menu p 
+{
+    background: linear-gradient(#FF79DA,#9356DC);
+    color: white;
+    padding: 10px;
+    width: 50%;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+
+footer
+{
+    color: white;
+    background-color: #424949;
+    padding: 20px;
+    line-height: 2em;
+}
+
+footer p 
+{
+    font-family:Shrikhand;
+}
+
+ul 
+{
+	list-style-type: none;
+}
+
+.icone_restaurant
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.liste_footer
+{
+    display:flex
+}
+
+.fa-utensils
+{
+    padding-right: 10px;
+}
+
+.fa-hands-helping
+{
+    padding-right: 3px;
+}
