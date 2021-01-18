@@ -48,7 +48,12 @@ a:link
     background-color: #F2F3F4;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    margin-top: -20px;
+    position: relative;
+    transform: scale(1);
+    transform-origin: center center;
 }
+
 
 .titre_menu
 {
@@ -61,7 +66,12 @@ a:link
 .titre_menu p
 {
     font-family: shrikhand;
-    font-size: 2em;
+    font-size: 1.8em;
+}
+
+.description
+{
+    font-size: 0.9em;
 }
 
 .fa-heart
@@ -73,7 +83,7 @@ a:link
 {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 .choix_entree 
@@ -82,24 +92,169 @@ a:link
     width: 11%;
 }
 
-.conteneur_description_prix
-{
-    display: flex;
-    justify-content: space-between;
-}
-
-.conteneur_description_prix p 
-{
-    font-size: 13px;
-}
-
 .choix
 {
     background-color: white;
     border-radius: 10px;
     margin-top: 10px;
+    animation: fadein 1s;
+    display: flex;
+    justify-content: space-between;
 }
 
+.choix2
+{
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    animation: fadein 2s;
+    display: flex;
+    justify-content: space-between;
+}
+
+.choix3
+{
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    animation: fadein 3s;
+    display: flex;
+    justify-content: space-between;
+}
+
+.choix4
+{
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    animation: fadein 3s;
+    display: flex;
+    justify-content: space-between;
+}
+
+@keyframes fadein
+{
+    from
+    {
+        opacity: 0; margin-bottom: 30px;
+    }
+    to 
+    {
+        opacity: 1;
+    }
+}
+
+.blanc
+{
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px
+}
+
+.blanc div
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.titre_choix
+{
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+.vert
+{
+    background-color: #99E2D0;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+}
+
+.cercle
+{
+    color: white;
+    width: 0;
+    opacity: 0;
+}
+
+.choix:hover .cercle
+{
+    animation-name: animation_circle;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.choix2:hover .cercle
+{
+    animation-name: animation_circle;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.choix3:hover .cercle
+{
+    animation-name: animation_circle;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.choix:hover .prix 
+{
+    border-radius: 0;
+}
+
+.choix2:hover .prix 
+{
+    border-radius: 0;
+}
+
+.choix3:hover .prix 
+{
+    border-radius: 0;
+}
+
+@keyframes animation_circle
+{
+    from
+    {
+        transform: rotate(0deg); 
+        width: 0;
+        opacity: 0;
+        
+    }
+    to
+    {
+        transform: rotate(360deg); 
+        width: 50px;
+        opacity: 1;
+    }
+}
+
+.prix
+{
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    background-color: white;
+    font-weight: bold;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 .commander_menu
 {
     background-color: #F2F3F4;
@@ -155,4 +310,41 @@ ul
 .fa-hands-helping
 {
     padding-right: 3px;
+}
+
+@media (min-width:1024px)
+{
+    .img_menu1
+    {
+        height: 500px;
+    }
+    .titre_menu
+    {
+        justify-content: center;
+    }
+    .fa-heart
+    {
+        padding-left: 20px;
+    }
+    .liste_carte
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .commander_menu p   
+    {
+        width: 25%;
+    }
+    footer p 
+    {
+        display: flex;
+        justify-content: center;
+    }
+    
+    ul 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
 }
