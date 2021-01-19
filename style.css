@@ -118,6 +118,7 @@ a:link
 .categorie_fonctionnement:hover
 {
     background-color: #E8DAEF;
+    box-shadow: 0px 15px 15px;
 }
 
 .categorie_fonctionnement2
@@ -137,6 +138,7 @@ a:link
 .categorie_fonctionnement2:hover
 {
     background-color: #E8DAEF;
+    box-shadow: 0px 15px 15px;
 }
 
 .icone_fonctionnement
