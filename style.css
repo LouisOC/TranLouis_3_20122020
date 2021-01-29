@@ -28,7 +28,6 @@ a:link
     animation: wallpaper 1s;
     animation-delay: 3s;
     animation-fill-mode: forwards;
-    pointer-events: none;
     z-index: 1;
 }
 
