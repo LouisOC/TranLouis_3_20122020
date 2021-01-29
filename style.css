@@ -29,6 +29,7 @@ a:link
     animation-delay: 3s;
     animation-fill-mode: forwards;
     z-index: 1;
+    pointer-events: none;
 }
 
 @keyframes wallpaper
