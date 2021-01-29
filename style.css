@@ -170,6 +170,12 @@ a:link
     box-shadow: 0px 15px 15px;
 }
 
+.exploration_restaurant:hover
+{
+    background: #C097C9;
+    box-shadow: black 0px 15px 15px;
+}
+
 .categorie_fonctionnement2
 {
     display: flex;
@@ -333,11 +339,6 @@ footer p
 ul 
 {
     list-style-type: none;
-}
-
-.liste_footer
-{
-    display:flex
 }
 
 .fa-utensils

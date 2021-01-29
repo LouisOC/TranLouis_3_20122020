@@ -50,8 +50,6 @@ a:link
     border-top-right-radius: 25px;
     margin-top: -20px;
     position: relative;
-    transform: scale(1);
-    transform-origin: center center;
 }
 
 
@@ -175,7 +173,16 @@ a:link
     border-top-right-radius: 10px;
     display: flex;
 }
-
+.prix
+{
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    background-color: white;
+    font-weight: bold;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 .cercle
 {
     color: white;
@@ -212,22 +219,6 @@ a:link
     justify-content: center;
     margin-top: 20px;
 }
-
-.choix:hover .prix 
-{
-    border-radius: 0;
-}
-
-.choix2:hover .prix 
-{
-    border-radius: 0;
-}
-
-.choix3:hover .prix 
-{
-    border-radius: 0;
-}
-
 @keyframes animation_circle
 {
     from
@@ -244,17 +235,22 @@ a:link
         opacity: 1;
     }
 }
-
-.prix
+.choix:hover .prix 
 {
-    display: flex;
-    align-items: flex-end;
-    padding: 10px;
-    background-color: white;
-    font-weight: bold;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 0;
 }
+
+.choix2:hover .prix 
+{
+    border-radius: 0;
+}
+
+.choix3:hover .prix 
+{
+    border-radius: 0;
+}
+
+
 .commander_menu
 {
     background-color: #F2F3F4;
@@ -271,6 +267,12 @@ a:link
     width: 50%;
     border-radius: 25px;
     margin-bottom: 50px;
+}
+
+.commander_menu p:hover 
+{
+    background: #C097C9;
+    box-shadow: black 0px 15px 15px;
 }
 
 footer
