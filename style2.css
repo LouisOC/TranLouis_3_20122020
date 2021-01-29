@@ -4,11 +4,11 @@
     src: url('police/Shrikhand-Regular.ttf');
     font-family: roboto;
     src: url('police/Roboto-Regular.ttf');
-
+    
 }
 *
 {
-	padding : 0;
+    padding : 0;
     margin : 0;
     font-family: roboto;
 }
@@ -288,7 +288,7 @@ footer p
 
 ul 
 {
-	list-style-type: none;
+    list-style-type: none;
 }
 
 .icone_restaurant
